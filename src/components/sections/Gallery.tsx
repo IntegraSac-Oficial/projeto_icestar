@@ -71,7 +71,7 @@ export default function Gallery({ images }: GalleryProps) {
     <>
       <SectionContainer
         id="applications"
-        variant="white"
+        background="white"
         className="py-16 md:py-24 scroll-mt-28"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

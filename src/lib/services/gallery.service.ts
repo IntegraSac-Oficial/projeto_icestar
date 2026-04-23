@@ -95,11 +95,11 @@ export async function createGalleryImage(data: CreateGalleryImageData): Promise<
     VALUES (?, ?, ?)
   `;
   
-  const [result] = await query<ResultSetHeader>(sql, [
+  const [result] = await query(sql, [
     data.image_path,
     data.caption,
     displayOrder,
-  ]);
+  ]) as unknown as [ResultSetHeader, any];
   
   return result.insertId;
 }
@@ -141,7 +141,7 @@ export async function updateGalleryImage(
     WHERE id = ?
   `;
   
-  const result = await query<ResultSetHeader>(sql, values);
+  const [result] = await query(sql, values) as unknown as [ResultSetHeader, any];
   return result.affectedRows > 0;
 }
 
@@ -150,7 +150,7 @@ export async function updateGalleryImage(
  */
 export async function deleteGalleryImage(id: number): Promise<boolean> {
   const sql = 'DELETE FROM gallery_images WHERE id = ?';
-  const result = await query<ResultSetHeader>(sql, [id]);
+  const [result] = await query(sql, [id]) as unknown as [ResultSetHeader, any];
   return result.affectedRows > 0;
 }
 
