@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "coolify": {
+      "command": "npx",
+      "args": ["-y", "coolify-mcp-server-kof70"],
+      "env": {
+        "COOLIFY_BASE_URL": "https://coolify.integrasac.com.br",
+        "COOLIFY_TOKEN": "7|5RxiTBDbCGAMk1Wl7jzjMhfkI5N1cYbhrju5eYiW2cbb7236"
+      },
+      "disabled": false
+    }
+  }
+}

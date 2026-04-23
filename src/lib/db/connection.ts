@@ -15,7 +15,9 @@ const poolConfig: mysql.PoolOptions = {
   user: process.env.DATABASE_USER || 'istar_user',
   password: process.env.DATABASE_PASSWORD || 'istar_password',
   waitForConnections: true,
-  connectionLimit: 10,
+  connectionLimit: 5, // Reduzido para evitar esgotar o limite do MySQL
+  maxIdle: 5, // Máximo de conexões ociosas
+  idleTimeout: 60000, // Timeout de 60s para conexões ociosas
   queueLimit: 0,
   enableKeepAlive: true,
   keepAliveInitialDelay: 0,

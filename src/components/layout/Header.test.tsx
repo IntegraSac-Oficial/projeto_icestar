@@ -46,13 +46,6 @@ const HeaderTest: React.FC = () => {
           </div>
         </section>
 
-        <section id="applications" className="min-h-screen bg-neutral-light flex items-center justify-center scroll-mt-20">
-          <div className="text-center">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Applications Section</h2>
-            <p className="text-lg text-gray-600">This is the applications section.</p>
-          </div>
-        </section>
-
         <section id="contact" className="min-h-screen bg-white flex items-center justify-center scroll-mt-20">
           <div className="text-center">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">Contact Section</h2>

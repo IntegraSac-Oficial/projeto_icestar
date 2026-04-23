@@ -10,6 +10,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import { getSection, updateSection } from '@/lib/services/content.service';
+import { clearContentCache } from '@/lib/utils/content-fetcher';
 import {
   heroSchema,
   aboutSchema,
@@ -145,6 +146,9 @@ export async function PUT(
 
     // Update section content
     await updateSection(section, validatedData, session.user.email);
+
+    // Clear cache to reflect changes immediately
+    clearContentCache();
 
     return NextResponse.json(
       {

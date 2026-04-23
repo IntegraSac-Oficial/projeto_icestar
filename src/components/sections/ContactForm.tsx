@@ -73,7 +73,7 @@ const ContactForm: React.FC<ContactFormProps> = ({ content }) => {
   };
 
   return (
-    <section id="contact" className="scroll-mt-20">
+    <section id="contact" className="scroll-mt-28">
       <SectionContainer background="white" className="py-12 md:py-16 lg:py-24">
         {/* Section Header */}
         <div className="text-center mb-12">

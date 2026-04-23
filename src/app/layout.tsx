@@ -91,7 +91,7 @@ export default async function RootLayout({
         <Header logoPath={logoPath} />
         
         {/* Main Content - Add padding-top to account for fixed header */}
-        <div className="pt-20">
+        <div className="pt-28">
           {children}
         </div>
         

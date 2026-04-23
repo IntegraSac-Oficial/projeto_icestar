@@ -10,7 +10,7 @@ import { differentials } from '@/data/differentials';
  */
 const Differentials: React.FC = () => {
   return (
-    <section id="differentials" className="scroll-mt-20">
+    <section id="differentials" className="scroll-mt-28">
       <SectionContainer background="neutral-gray" className="py-12 md:py-16 lg:py-24">
         {/* Section Header */}
         <div className="text-center mb-12">

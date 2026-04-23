@@ -24,7 +24,7 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
 const About: React.FC<AboutProps> = ({ content }) => {
 
   return (
-    <section id="about" className="scroll-mt-20">
+    <section id="about" className="scroll-mt-28">
       <SectionContainer background="light-gray" className="py-12 md:py-16 lg:py-24">
         <div className="max-w-4xl mx-auto text-center mb-12">
           {/* Section Title */}

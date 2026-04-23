@@ -146,7 +146,7 @@ export default function DashboardPage() {
       </div>
 
       {/* Stats Cards */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
         {/* Content Sections Card */}
         <div className="bg-white rounded-lg shadow-card p-6">
           <div className="flex items-center gap-3 mb-4">
@@ -161,6 +161,24 @@ export default function DashboardPage() {
             </div>
           </div>
         </div>
+
+        {/* Gallery Card */}
+        <Link href="/admin/gallery" className="bg-white rounded-lg shadow-card p-6 hover:shadow-lg transition-shadow">
+          <div className="flex items-center gap-3 mb-4">
+            <div className="p-3 bg-orange-100 rounded-lg">
+              <ImageIcon className="w-6 h-6 text-orange-600" />
+            </div>
+            <div>
+              <p className="text-sm text-gray-600">Galeria</p>
+              <p className="text-2xl font-bold text-black">
+                Gerenciar
+              </p>
+            </div>
+          </div>
+          <p className="text-xs text-gray-500">
+            Fotos de aplicações
+          </p>
+        </Link>
 
         {/* Logo Card */}
         <div className="bg-white rounded-lg shadow-card p-6">

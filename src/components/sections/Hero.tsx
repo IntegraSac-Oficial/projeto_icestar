@@ -27,7 +27,7 @@ const Hero: React.FC<HeroProps> = ({ content }) => {
   };
 
   return (
-    <section id="hero" className="min-h-[80vh] flex items-center bg-white scroll-mt-20">
+    <section id="hero" className="min-h-[80vh] flex items-center bg-white scroll-mt-28">
       <SectionContainer className="py-12 md:py-16 lg:py-24">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Text Content - Left Side */}

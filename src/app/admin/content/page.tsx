@@ -38,12 +38,6 @@ const contentSections: ContentSection[] = [
     available: false,
   },
   {
-    key: 'applications',
-    label: 'Aplicações',
-    description: 'Tipos de veículos e aplicações atendidas',
-    available: false,
-  },
-  {
     key: 'differentials',
     label: 'Diferenciais',
     description: 'Diferenciais competitivos da empresa',

@@ -10,7 +10,7 @@ import { services } from '@/data/services';
  */
 const Services: React.FC = () => {
   return (
-    <section id="services" className="scroll-mt-20">
+    <section id="services" className="scroll-mt-28">
       <SectionContainer background="white" className="py-12 md:py-16 lg:py-24">
         {/* Section Header */}
         <div className="text-center mb-12">

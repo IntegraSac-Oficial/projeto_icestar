@@ -1,8 +1,8 @@
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
-import Applications from '@/components/sections/Applications';
 import Differentials from '@/components/sections/Differentials';
+import Gallery from '@/components/sections/Gallery';
 import CTASection from '@/components/sections/CTASection';
 import ContactForm from '@/components/sections/ContactForm';
 import {
@@ -11,6 +11,7 @@ import {
   getCTAContent,
   getContactFormContent,
 } from '@/lib/utils/content-fetcher';
+import { getAllGalleryImages } from '@/lib/services/gallery.service';
 
 /**
  * Main landing page component
@@ -19,11 +20,12 @@ import {
  */
 export default async function Home() {
   // Fetch all content in parallel
-  const [heroContent, aboutContent, ctaContent, contactFormContent] = await Promise.all([
+  const [heroContent, aboutContent, ctaContent, contactFormContent, galleryImages] = await Promise.all([
     getHeroContent(),
     getAboutContent(),
     getCTAContent(),
     getContactFormContent(),
+    getAllGalleryImages(),
   ]);
 
   return (
@@ -37,11 +39,11 @@ export default async function Home() {
       {/* Services Section */}
       <Services />
 
-      {/* Applications Section */}
-      <Applications />
-
       {/* Differentials Section */}
       <Differentials />
+
+      {/* Gallery Section - Applications */}
+      <Gallery images={galleryImages} />
 
       {/* CTA Section */}
       <CTASection 

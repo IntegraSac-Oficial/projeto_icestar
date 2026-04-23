@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ logoPath }) => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md backdrop-blur-sm">
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
+        <div className="flex items-center justify-between h-28">
           {/* Logo */}
           <div className="flex-shrink-0">
             <button
@@ -61,9 +61,9 @@ const Header: React.FC<HeaderProps> = ({ logoPath }) => {
                 <Image
                   src={logoPath}
                   alt="Ice Star"
-                  width={120}
-                  height={48}
-                  className="h-12 w-auto object-contain"
+                  width={280}
+                  height={112}
+                  className="h-24 w-auto object-contain"
                   priority
                 />
               ) : (
